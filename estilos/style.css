@@ -1,11 +1,13 @@
-*{
-    /* padding: 0; */
+html {
+    font-size: 62.5%;
+}
+  
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
 }
-html{
-    font-size: 1rem;
-    height: 100%;
-}
+
 body,header,main,footer{
     border: 3px red solid;
     min-height: 50px;
@@ -15,7 +17,8 @@ body,header,main,footer{
 
 body{
     background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Rubik", Helvetica, sans-serif;
+    font-size: 1.6rem;
 }
 
 main{
@@ -33,6 +36,7 @@ footer{
     background: rgb(255,255,255);
 
 }
+
 
 
 /* contenido principal */
@@ -72,45 +76,78 @@ main>aside{
 }
 
 /* logo y menu */
-.header-logo{
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem;
+a{
+    text-decoration: none;
+}
+/* .headerFull{
+    display: flex;
+} */
 
+.logo{
+    min-height: 50px;
+    margin-left: 10px;
 }
 
-.header-menubar{
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 1rem;
-
+.headerSuperior{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.header-menubar ul{
+.headerBackground{
+    display: flex;
+    align-items: center;
+    background-color: #EEE;
+    border-bottom-left-radius: 15px;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    min-height: 50px;
+}
+.headerMenu{
     list-style: none;
+    display: flex;
+}
+.headerMenu li a{
+    color:rgb(2, 2, 2);
+    padding: 15px;
 }
 
-.header-menubar li{
-    float: left;
+.iconos{
+    font-size: 25px;
+}
+
+.headerMenubar{
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.headerMenubar ul{
+    list-style: none;
+    display: flex;
+}
+
+.headerMenubar li{
     font-weight: 700;
     text-align: center;
-    margin: 0 0.5rem 0 ;
-    /* padding: 0.5rem; */
+    margin: 1rem 0 ;
+    padding: 0 3rem;;
 }
 
-.header-menubar a{
+.headerMenubar a{
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-.header-menubar a:hover{    /*a es un hipervinculo dentro de la clase header.menubar*/
+.headerMenubar a:hover{    /*a es un hipervinculo dentro de la clase header.menubar*/
     color: blue;
 }
 
-.header-menubar li a{
+.headerMenubar li a{
     font-size: 1.2rem;
     background: transparent;
 }
